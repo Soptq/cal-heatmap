@@ -1681,7 +1681,7 @@ CalHeatMap.prototype = {
 			}
 
 			return this.formatStringWithObject(this.options.subDomainTitleFormat.filled, {
-				count: this.formatNumber(value),
+				count: value,
 				name: this.options.itemName[(value !== 1 ? 1: 0)],
 				connector: this._domainType[this.options.subDomain].format.connector,
 				date: this.formatDate(new Date(d.t), this.options.subDomainDateFormat)
