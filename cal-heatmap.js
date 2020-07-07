@@ -2594,8 +2594,8 @@ CalHeatMap.prototype = {
 						}
 					}
 				}
-
-				xhr.send(requestType, payload, _callback);
+				xhr.then(data => {_callback(null, data)})
+// 				xhr.send(requestType, payload, _callback);
 			}
 			return false;
 		case "object":
